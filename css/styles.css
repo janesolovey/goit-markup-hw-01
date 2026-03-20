@@ -184,8 +184,8 @@ img {
     transition: background-color 300ms linear;
 }
 
-.hero-button:hover{
-background-color: #404BBF;
+.hero-button:hover {
+    background-color: #404BBF;
 }
 
 .about {}
@@ -312,7 +312,7 @@ background-color: #404BBF;
 }
 
 .team-icons-li:hover,
- .team-icons-li:focus{
+.team-icons-li:focus {
     background-color: #404BBF
 }
 
@@ -358,6 +358,10 @@ background-color: #404BBF;
     padding-bottom: 32px;
 }
 
+.portfolio-list:hover .portfolio-text {
+    transform: translate(0)
+}
+
 .portfolio-subtitle {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -369,7 +373,7 @@ background-color: #404BBF;
     padding-top: 32px;
 }
 
-.portfolio-text {
+.portfolio-name {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -377,6 +381,32 @@ background-color: #404BBF;
     letter-spacing: 0.02em;
     color: #434455;
     padding-left: 16px;
+}
+
+.second-view {
+    position: relative;
+overflow:hidden;
+}
+
+.portfolio-pic {}
+
+.portfolio-text {
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    color: var(--CLOUD, #F4F4FD);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    background-color: #4D5AE5;
+    top: 0;
+    left: 0;
+    padding: 40px 32px 164px 32px;
+    transform: translateY(100%); 
+    transition: transform 300ms linear;
 }
 
 .footer {
@@ -445,10 +475,10 @@ background-color: #404BBF;
     color: #fff;
 }
 
-.footer-first-div{
-   display: flex;
-   flex-direction: column;
-   gap: 18px;
+.footer-first-div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .footer-title {
@@ -461,7 +491,7 @@ background-color: #404BBF;
     letter-spacing: 0.32px;
 }
 
-.footer-icons{
+.footer-icons {
     display: flex;
     margin-left: 120px;
     flex-direction: column;
@@ -487,8 +517,7 @@ background-color: #404BBF;
 }
 
 .footer-icons-li:hover,
-.footer-icons-li:focus
-{
+.footer-icons-li:focus {
     background-color: #31D0AA;
 }
 
